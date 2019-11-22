@@ -28,11 +28,12 @@ function Textarea({ label, ...props }) {
 }
 
 function ContactForm() {
-	const [state, setState] = useState({
+	const defaultState = {
 		description: '',
 		email: '',
 		name: '',
-	});
+	};
+	const [state, setState] = useState(defaultState);
 
 	function handleChange(e) {
 		setState({ ...state, [e.target.name]: e.target.value });
@@ -51,7 +52,10 @@ function ContactForm() {
 				...state,
 			}),
 		})
-			.then(() => alert("Takk for din henvendelse"))
+			.then(() => {
+				setState(defaultState);
+				alert('Takk for din henvendelse');
+			})
 			.catch(error => alert(error));
 	}
 
