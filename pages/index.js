@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
+import { NextSeo } from 'next-seo';
 import CTA from '../components/cta';
 import ProjectItem from '../components/project-item';
 import Grid, { GridItem } from '../components/grid';
@@ -7,6 +8,13 @@ import Grid, { GridItem } from '../components/grid';
 function Index() {
 	return (
 		<Layout>
+			<NextSeo
+				title="Pragmati"
+				description="Trenger du hjelp til utvikling av eksisterende eller nye
+				produkter på nett? Pragmati leverer utvikling/design av nettsider og
+				applikasjoner."
+			/>
+			
 			<h1>Vi utvikler interaktive digitale tjenester i toppklasse</h1>
 
 			<p>
