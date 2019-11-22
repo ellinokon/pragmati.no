@@ -17,16 +17,9 @@
     "prettier": "^1.18.2"
   },
   "dependencies": {
-    "@sanity/base": "^0.142.6",
-    "@sanity/client": "^0.142.6",
-    "@sanity/components": "^0.142.6",
-    "@sanity/core": "^0.142.6",
-    "@sanity/default-layout": "^0.142.7",
-    "@sanity/default-login": "^0.142.6",
-    "@sanity/desk-tool": "^0.142.7",
     "@zeit/next-css": "^1.0.1",
     "babel-plugin-inline-react-svg": "^1.1.0",
-    "bcp47": "^1.1.2",
+    "cross-fetch": "^3.0.4",
     "cssnano": "^4.1.10",
     "next": "^9.0.7",
     "postcss-calc": "^7.0.1",
