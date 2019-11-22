@@ -1,0 +1,9 @@
+.header {
+	margin: var(--baseline) 0 var(--baseline-2) 0;
+}
+
+.logo {
+	width: 100%;
+	height: var(--baseline);
+	display: block;
+}

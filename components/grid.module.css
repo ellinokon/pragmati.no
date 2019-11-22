@@ -1,0 +1,10 @@
+.grid {
+	display: grid;
+	grid-gap: var(--baseline);
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.gridItem {
+	& > *:first-child {margin-top: 0;}
+	& > *:last-child {margin-bottom: 0;}
+}

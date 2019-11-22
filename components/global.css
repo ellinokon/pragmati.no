@@ -1,0 +1,149 @@
+@font-face {
+	font-family: 'Gilroy-ExtraBold';
+	font-weight: 900;
+	src: url('/static/fonts/3826D6_0_0.woff2') format('woff2'),
+		url('/static/fonts/3826D6_0_0.woff') format('woff'),
+		url('/static/fonts/3826D6_0_0.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'Source Serif';
+	font-weight: 200 900;
+	font-style: normal;
+	font-stretch: normal;
+	src: url('/static/fonts/SourceSerifVariable-Roman.ttf.woff2') format('woff2'),
+		url('/static/fonts/SourceSerifVariable-Roman.ttf.woff') format('woff'),
+		url('/static/fonts/SourceSerifVariable-Roman.ttf') format('truetype');
+}
+
+:root {
+	--font-base: 93.75%;
+	--font-ratio: 1.35;
+	--font-size-1: calc(1em / var(--font-ratio));
+	--font-size-2: 1em;
+	--font-size-3: calc(1em * var(--font-ratio));
+	--font-size-4: calc(1em * var(--font-ratio) * var(--font-ratio));
+	--font-size-5: calc(1em * var(--font-ratio) * var(--font-ratio) * var(--font-ratio));
+	--font-size-6: calc(1em * var(--font-ratio) * var(--font-ratio) * var(--font-ratio) * var(--font-ratio));
+
+	--font-family-sans: 'Gilroy-ExtraBold', sans-serif;
+	--font-family-serif: 'Source Serif', serif;
+
+	--line-ratio: 1.65;
+	--baseline-half: calc(0.5rem * var(--line-ratio));
+	--baseline: calc(1rem * var(--line-ratio));
+	--baseline-2: calc(1rem * var(--line-ratio) * 2);
+	--baseline-3: calc(1rem * var(--line-ratio) * 3);
+	--baseline-4: calc(1rem * var(--line-ratio) * 4);
+
+	--color-blue-100: #F6F5F9;
+	--color-blue-200: #E8E8F3;
+	--color-blue-300: #C2C1E6;
+	--color-blue-500: #363399;
+	--color-blue-900: #15143B;
+	--box-shadow-blue-heavy: 0 2px 10px rgba(54, 51, 153, 0.25); /* uses --color-blue-500 as base */
+	--box-shadow-blue-heavy-hover: 0 2px 10px rgba(54, 51, 153, 0.75); /* uses --color-blue-500 as base */
+
+	--border-radius: 3px;
+	--short-transition: 0.1s ease-in-out;
+}
+
+@media screen and (min-width: 592px) {
+	:root {
+		--font-base: 100%;
+		--font-ratio: 1.5;
+	}
+}
+
+@media screen and (min-width: 666px) {
+	:root {
+		--font-base: 112.5%;
+	}
+}
+
+@media screen and (min-width: 814px) {
+	:root {
+		--font-base: 137.5%;
+	}
+}
+
+html,
+body,
+#__next {
+	width: 100%;
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+}
+
+html {
+	background: var(--color-blue-100);
+	font: var(--font-base)/var(--line-ratio) var(--font-family-serif);
+	font-weight: 400;
+	color: var(--color-blue-900);
+}
+
+input,
+button,
+textarea,
+select {
+	font: var(--font-size-2)/var(--line-ratio) var(--font-family-serif);
+}
+
+a {
+	color: var(--color-blue-500);
+	text-decoration: none;
+	border-bottom: 1px solid var(--color-blue-300);
+	transition: border var(--short-transition),
+		color var(--short-transition);
+
+	&:hover {
+		color: var(--color-blue-900);
+		border-bottom: 1px solid var(--color-blue-900);
+	}
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--font-family-sans);
+}
+
+h1 {
+	margin: var(--baseline-2) 0 var(--baseline) 0;
+	font-size: var(--font-size-4);
+	line-height: calc(var(--line-ratio) * 0.78);
+}
+
+h2 {
+	margin: var(--baseline-2) 0 var(--baseline) 0;
+	font-size: var(--font-size-3);
+	line-height: calc(var(--line-ratio) * 0.82);
+}
+
+h3 {
+	margin: var(--baseline) 0 0 0;
+	font-size: var(--font-size-2);
+	line-height: var(--line-ratio);
+
+	& + p {
+		margin-top: 0;
+	}
+}
+
+p {
+	margin: var(--baseline) 0;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+main {
+	max-width: 35em;
+	margin: 0 auto;
+	padding: 0 var(--baseline);
+}

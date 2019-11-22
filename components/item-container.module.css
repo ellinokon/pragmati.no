@@ -1,0 +1,39 @@
+.itemContainer {
+	margin: var(--baseline) 0;
+	padding: var(--baseline);
+	background: var(--color-blue-500);
+	border-radius: var(--border-radius);
+	position: relative;
+	z-index: 1;
+	transition: color var(--short-transition);
+
+	&::before {
+		--border-size: 2px;
+		--border-size-left: 6px;
+		content: '';
+		position: absolute;
+		top: var(--border-size);
+		right: var(--border-size);
+		bottom: var(--border-size);
+		left: var(--border-size-left);
+		background: var(--color-blue-100);
+		border-radius: 2px;
+		z-index: -1;
+		transition: left 0.25s ease-in-out;
+	}
+
+	&:hover {
+		color: var(--color-blue-100);
+
+		&::before {
+			left: 100%;
+		}
+	}
+}
+
+.itemContent {
+	z-index: 2;
+
+	& > *:first-child {margin-top: 0;}
+	& > *:last-child {margin-bottom: 0;}
+}

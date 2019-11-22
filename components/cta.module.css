@@ -1,0 +1,27 @@
+.container {
+	width: 100%;
+	margin: var(--baseline) 0;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	flex-direction: column;
+}
+
+.primaryAction {
+	margin: 0 0 0.25rem 0;
+}
+
+@media screen and (min-width: 450px) {
+	.container {
+		flex-direction: row;
+
+		& > span + span {
+			display: inline-block;
+			margin-left: 0.25rem;
+		}
+	}
+
+	.primaryAction {
+		margin: 0 var(--baseline-half) 0 0;
+	}
+}

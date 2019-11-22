@@ -1,34 +1,38 @@
 {
   "name": "pragmati.no",
+  "private": true,
+  "version": "1.0.0",
   "description": "",
-  "version": "0.1.0",
+  "main": "",
   "author": "Håkon Ellingsen <hakonweb@gmail.com>",
+  "license": "UNLICENSED",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "gatsby": "^2.0.53",
-    "gatsby-image": "^2.0.20",
-    "gatsby-plugin-manifest": "^2.0.9",
-    "gatsby-plugin-offline": "^2.0.16",
-    "gatsby-plugin-react-helmet": "^3.0.2",
-    "gatsby-plugin-react-svg": "^2.0.0",
-    "gatsby-plugin-sharp": "^2.0.15",
-    "gatsby-source-filesystem": "^2.0.8",
-    "gatsby-transformer-sharp": "^2.1.8",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-helmet": "^5.2.0"
+    "build": "next build",
+    "deploy": "npm run build && npm run export",
+    "dev": "next",
+    "export": "next export",
+    "start": "next start"
   },
   "devDependencies": {
-    "prettier": "^1.15.2"
+    "prettier": "^1.18.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ellinokon/pragmati.no"
+  "dependencies": {
+    "@sanity/base": "^0.142.6",
+    "@sanity/client": "^0.142.6",
+    "@sanity/components": "^0.142.6",
+    "@sanity/core": "^0.142.6",
+    "@sanity/default-layout": "^0.142.7",
+    "@sanity/default-login": "^0.142.6",
+    "@sanity/desk-tool": "^0.142.7",
+    "@zeit/next-css": "^1.0.1",
+    "babel-plugin-inline-react-svg": "^1.1.0",
+    "bcp47": "^1.1.2",
+    "cssnano": "^4.1.10",
+    "next": "^9.0.7",
+    "postcss-calc": "^7.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "prop-types": "^15.6",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
   }
 }

@@ -1,0 +1,14 @@
+.container {
+	--margin-sides: calc(-1 * var(--baseline));
+	margin-right: var(--margin-sides);
+	margin-left: var(--margin-sides);
+}
+
+.description {
+	margin: 0;
+}
+
+.tags {
+	margin-top: var(--baseline-half);
+	font-size: var(--font-size-1);
+}
