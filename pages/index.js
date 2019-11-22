@@ -17,11 +17,9 @@ function Index() {
 				fra A til Å.
 			</p>
 
-
+			<CTA />
 
 			<h2>Utvalgte prosjekter</h2>
-
-
 
 			<ProjectItem
 				title="Plattform for Agder Media"
@@ -37,33 +35,61 @@ function Index() {
 				]}
 			/>
 
+			<ProjectItem
+				title="Nettbutikk for Lappeteknikk"
+				description="Lappeteknikk har blant annet fått utviklet en
+				abonnementsløsning med Stripe, og egen integrasjon med Vipps i sin
+				nettbutikk."
+				tags={[
+					'Elixir',
+					'Phoenix',
+					'Vipps',
+					'Stripe',
+					'abonnement',
+					'Mailchimp',
+					'Docker',
+				]}
+			/>
 
-
+			<ProjectItem
+				title="Festivalside for Naustvikafestivalen"
+				description="Vi utviklet en designprofil til bruk i markedsføring og
+				annet grafisk materiell, i tillegg til en fersk nettside for årets
+				festival (2019)."
+				tags={[
+					'React.js',
+					'Gatsby.js',
+					'Netlify',
+					'JAMstack',
+					'CDN',
+					'design',
+					'logo',
+				]}
+			/>
 
 
 			<h2>Slik kan vi hjelpe deg</h2>
-
 
 
 			<Grid>
 				<GridItem>
 					<h3>Konsultering og team supplement</h3>
 					<p>
-						Vi kan fleksibelt supplementere og jobbe innenfor et eksisterende team
-						og arbeidsmetodikk.
+						Vi kan fleksibelt supplementere og jobbe innenfor et eksisterende
+						team og arbeidsmetodikk.
 					</p>
 				</GridItem>
 
 				<GridItem>
 					<h3>Utvikling fra grunnen av</h3>
 					<p>
-						For nye prosjekter kan vi stå for design, programmering, drift, og
-						vedlikehold.
+						For nye prosjekter kan vi stå for design, programmering, drift,
+						vedlikehold, og mer.
 					</p>
 				</GridItem>
 			</Grid>
 
-
+			<CTA />
 		</Layout>
 	);
 }

@@ -7,3 +7,9 @@
 	height: var(--baseline);
 	display: block;
 }
+
+.footer {
+	margin: var(--baseline-2) 0 var(--baseline) 0;
+	font-size: var(--font-size-1);
+	text-align: center;
+}

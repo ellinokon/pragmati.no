@@ -32,7 +32,7 @@ function ContactForm() {
 				.
 			</p>
 
-			<form name="contact" method="POST" data-netlify="true">
+			<form name="contact" method="POST" action="/kontakt-sendt" data-netlify="true">
 				<Input
 					label="Ditt navn"
 					type="text"

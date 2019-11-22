@@ -17,6 +17,20 @@ function Layout({ children }) {
 			</header>
 
 			<main>{children}</main>
+
+			<footer className={classNames.footer}>
+				<p>
+					<Link href="/">
+						<a>Hjem</a>
+					</Link>
+					{' - '}
+					<Link href="/kontakt">
+						<a>Kontakt</a>
+					</Link>
+				</p>
+
+				<p>© 2019 Pragmati AS - Orgnr. 921 847 009</p>
+			</footer>
 		</>
 	);
 }

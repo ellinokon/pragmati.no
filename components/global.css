@@ -134,7 +134,15 @@ h3 {
 }
 
 p {
-	margin: var(--baseline) 0;
+	margin: calc(1em * var(--line-ratio)) 0;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 img {
