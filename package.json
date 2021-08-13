@@ -21,7 +21,7 @@
     "babel-plugin-inline-react-svg": "^1.1.0",
     "cross-fetch": "^3.0.4",
     "cssnano": "^4.1.10",
-    "next": "^9.0.7",
+    "next": "^11.1.0",
     "next-seo": "^3.0.0",
     "postcss-calc": "^7.0.1",
     "postcss-preset-env": "^6.7.0",
